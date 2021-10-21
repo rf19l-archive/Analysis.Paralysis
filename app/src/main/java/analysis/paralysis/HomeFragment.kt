@@ -36,11 +36,12 @@ class HomeFragment : Fragment() {
         val items = binding?.etInput?.text?.split(regex)
         if (items != null) {
             for(item in items)
-                if (item.trim().isNotEmpty())
+                if (item.trim().isNotEmpty() && ! list.contains(item))
                     list.add(item)
         }
         if(list.size > 0){
-            val action = HomeFragmentDirections.actionHomeFragmentToSortFragment( list.toTypedArray() as Array<String>)
+            list.shuffle()
+            val action = HomeFragmentDirections.actionHomeFragmentToSortFragment(list.toTypedArray())
             findNavController().navigate(action)
         }
     }
