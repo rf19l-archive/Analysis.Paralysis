@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import java.util.*
 
@@ -28,10 +29,16 @@ class ResultFragment : Fragment() {
 
         binding!!.apply{
             var buffer:StringBuffer = StringBuffer()
+            args.items.reverse()
             args.items.forEach {
-                buffer.append(it).append(" ")
+                buffer.append(it).append("\n")
             }
             etResult.setText(buffer.toString())
+
+            btReset.setOnClickListener {
+                val action = ResultFragmentDirections.actionResultFragmentToHomeFragment()
+                findNavController().navigate(action)
+            }
         }
     }
 

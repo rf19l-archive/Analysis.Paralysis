@@ -22,6 +22,9 @@
         <argument
             android:name="items"
             app:argType="string[]" />
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/sortFragment"
@@ -34,5 +37,8 @@
         <argument
             android:name="items"
             app:argType="string[]" />
+        <action
+            android:id="@+id/action_sortFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 </navigation>

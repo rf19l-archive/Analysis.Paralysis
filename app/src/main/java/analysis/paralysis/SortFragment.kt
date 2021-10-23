@@ -62,6 +62,15 @@ class SortFragment : Fragment() {
                 }
             }
 
+            btReset.setOnClickListener {
+                val action = SortFragmentDirections.actionSortFragmentToHomeFragment()
+                findNavController().navigate(action)
+            }
+
+
+
+
+
         }
         super.onViewCreated(view, savedInstanceState)
     }

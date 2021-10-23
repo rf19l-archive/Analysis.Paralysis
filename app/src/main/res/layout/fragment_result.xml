@@ -29,8 +29,22 @@
             android:ellipsize="end"
             android:gravity="top"
             android:imeOptions="actionDone"
-            android:lines="1"
+            android:lines="4"
+            android:maxLines="10"
+            android:overScrollMode="ifContentScrolls"
             tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/results"
+        app:layout_constraintStart_toStartOf="@+id/results"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

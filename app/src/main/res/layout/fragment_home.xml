@@ -31,7 +31,7 @@
             android:gravity="top"
             android:lines="6"
             tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck"
-            android:imeOptions="actionGo"/>
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
