@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import kotlin.system.exitProcess
 
 class HomeFragment : Fragment() {
     private var binding: FragmentHomeBinding? = null
@@ -28,6 +29,10 @@ class HomeFragment : Fragment() {
         binding!!.apply{
             btSubmit.setOnClickListener {
                 Submit(list)
+            }
+            imageButton.setOnClickListener {
+                activity?.finishAndRemoveTask()
+                exitProcess(0)
             }
         }
     }

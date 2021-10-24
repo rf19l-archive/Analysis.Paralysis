@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import java.util.*
+import kotlin.system.exitProcess
 
 class ResultFragment : Fragment() {
     private var binding:FragmentResultBinding? = null
@@ -38,6 +39,10 @@ class ResultFragment : Fragment() {
             btReset.setOnClickListener {
                 val action = ResultFragmentDirections.actionResultFragmentToHomeFragment()
                 findNavController().navigate(action)
+            }
+            imageButton.setOnClickListener {
+                activity?.finishAndRemoveTask()
+                exitProcess(0)
             }
         }
     }

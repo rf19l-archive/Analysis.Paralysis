@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ResultFragment">
 
+    <TextView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Quit"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/results"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
