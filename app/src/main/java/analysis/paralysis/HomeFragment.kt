@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment() {
     private var binding: FragmentHomeBinding? = null
-    val regex:Regex = Regex("[\\s,;]+")
+    val regex:Regex = Regex("[\\r\\n]+")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
