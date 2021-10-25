@@ -58,4 +58,15 @@
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".7" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Copy your sorted list below"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/results"
+        app:layout_constraintEnd_toEndOf="@+id/results"
+        app:layout_constraintStart_toStartOf="@+id/results" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
