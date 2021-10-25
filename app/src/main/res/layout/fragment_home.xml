@@ -51,11 +51,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:text="Enter a list of items to prioritize"
+        android:text="Enter each item on a new line"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/results"
         app:layout_constraintEnd_toEndOf="@+id/results"
-        app:layout_constraintStart_toStartOf="@+id/results"
-        android:textSize="20dp"/>
+        app:layout_constraintStart_toStartOf="@+id/results" />
 
     <Button
         android:id="@+id/bt_submit"
