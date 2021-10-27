@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ib_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SortFragment" >
+    tools:context=".SortFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/results"
@@ -28,11 +29,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
+            android:focusable="false"
             android:gravity="top"
             android:imeOptions="actionDone"
             android:lines="1"
             android:textIsSelectable="false"
-            android:focusable="false"
             tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,13 +60,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
+            android:focusable="false"
             android:gravity="top"
             android:imeOptions="actionDone"
             android:lines="1"
             android:textIsSelectable="false"
-            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck"
-            android:focusable="false"
-            />
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,7 +78,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout_second"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout_second"
-        app:layout_constraintWidth_percent=".7"
-        app:layout_constraintWidth_default="percent"/>
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Select the more important item"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/results"
+        app:layout_constraintEnd_toEndOf="@+id/results"
+        app:layout_constraintStart_toStartOf="@+id/results" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
