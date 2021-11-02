@@ -66,6 +66,9 @@ class SortFragment : Fragment() {
                 val action = SortFragmentDirections.actionSortFragmentToHomeFragment()
                 findNavController().navigate(action)
             }
+            imageButton.setOnClickListener {
+                activity?.finishAndRemoveTask()
+            }
 
 
 

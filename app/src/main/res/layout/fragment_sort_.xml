@@ -32,10 +32,22 @@
             android:focusable="false"
             android:gravity="top"
             android:imeOptions="actionDone"
-            android:lines="1"
+            android:lines="3"
             android:textIsSelectable="false"
-            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck"
+            android:singleLine="false"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Quit"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout_second"
@@ -63,9 +75,10 @@
             android:focusable="false"
             android:gravity="top"
             android:imeOptions="actionDone"
-            android:lines="1"
+            android:lines="3"
             android:textIsSelectable="false"
-            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck"
+            android:singleLine="false"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -42,7 +42,6 @@ class ResultFragment : Fragment() {
             }
             imageButton.setOnClickListener {
                 activity?.finishAndRemoveTask()
-                exitProcess(0)
             }
         }
     }

@@ -32,7 +32,6 @@ class HomeFragment : Fragment() {
             }
             imageButton.setOnClickListener {
                 activity?.finishAndRemoveTask()
-                exitProcess(0)
             }
         }
     }
